@@ -1,0 +1,34 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Mate SC', serif;
+    font-size: 200%;
+  }
+  p{
+    font-family: 'Mate SC', serif;
+    font-size:200%;
+    position:relative;
+    left:100px;
+  }
+  .title{
+    animation: color-change 5s infinite;
+  }
+  @keyframes color-change{
+    0%{color: #41F5AC;}
+    25%{color: #0F91C2;}
+    50%{color: #8967E7;}
+    75%{color: #E76796}
+    100%{color: #41F5AC;}
+  }
+  @keyframes border-color-change{
+    0%{border-color: #41F5AC;}
+    25%{border-color: #0F91C2;}
+    50%{border-color: #8967E7;}
+    75%{border-color: #E76796}
+    100%{border-color: #41F5AC;}
+  }
+  table, th, td{
+    border: 3px ridge;
+    animation: border-color-change 5s infinite;
+
+  }

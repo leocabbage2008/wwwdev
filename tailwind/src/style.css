@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.h-128 {
+    height: 128px;
+}

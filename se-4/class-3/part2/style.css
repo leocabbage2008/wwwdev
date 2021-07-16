@@ -1,0 +1,16 @@
+div:not(.links){
+    position:relative;
+    top:20px;
+    text-align:center;
+}
+a:hover:not(.links){
+    background-color:dodgerblue;
+    color: white;
+}
+a:not(.links){
+    padding:15px 20px;
+    color:black;
+}
+*:not(.links){
+    text-decoration:none;
+}

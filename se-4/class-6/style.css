@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.b-cont {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* button hover spin */
+
+button {
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  background-color: rgb(221, 60, 75);
+  padding: 5px 20px 5px 20px;
+  transition: 1s ease-in-out;
+  color: white;
+  box-shadow: 0px 0px 6px 2px red;
+}
+
+button:hover {
+  transform: rotate(1080deg);
+  box-shadow: 0px 0px 6px 2px red;
+}
+
+
+/* button rise */
+/* button {
+  border: none;
+  background-color: rgb(197, 134, 142);
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(236, 158, 167);
+  transform: translateY(-10px);
+} */
+
+/* button shift down*/
+/* button {
+  border: none;
+  background-color: rgb(197, 134, 142);
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(236, 158, 167);
+  transform: translateX(-5px);
+} */
+
+p {
+  text-align: center;
+}
+
+.b-cont {
+  display: flex;
+  justify-content: center;
+}

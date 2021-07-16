@@ -1,0 +1,17 @@
+.carousel-inner > .item {
+  -webkit-transition: 0s !important;
+  -o-transition: 0s !important;
+  transition: 0s !important;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+#team {
+  padding-top: 80px;
+}
+#sponsors {
+  padding-top: 120px;
+}

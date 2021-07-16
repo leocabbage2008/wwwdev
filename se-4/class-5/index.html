@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <audio src="vex.mp3" loop="true"></audio>
+    <nav
+      class="
+        navbar navbar-expand-md navbar-dark
+        bg-dark
+        text-light
+        justify-content-between
+        fixed-top
+      "
+    >
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Music</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Slides</a>
+            </li>
+            <li class="nav-item">
+              <a href="#team" class="nav-link link">Our team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sponsors" class="nav-link disabled">Sponsors</a>
+            </li>
+          </ul>
+          <div style="margin-left:auto;">
+            <button
+              class="btn btn-primary btn-large"
+              onclick="tog()"
+              style="margin-right: 20px"
+              margin-left:auto;
+              >
+              <i class="bi bi-pause" id="dynam"></i>
+            </button>
+          </div>
+          <div >
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel from the docs -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      id="slides"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.hdqwalls.com/wallpapers/music-pipes-abstract-4k-dm.jpg"
+            class="d-block w-100"
+          />
+          <div
+            class="carousel-caption text-start h3"
+            style="color: white; text-shadow: 2px 2px 3px #5bc0de"
+          >
+            <h5>Music</h5>
+            <p>
+              Music is everywhere, even in this website which is playing Sakura
+              by Vexento. Music is the most primitive way of communication, but
+              arguably the best.
+            </p>
+            <a
+              href="https://www.cmuse.org/history-of-music/"
+              class="btn btn-lg btn-primary"
+              style="color: none; text-shadow: none"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.hdqwalls.com/wallpapers/colors-flow-abstract-4k-jv.jpg"
+            class="d-block w-100"
+          />
+          <div
+            class="carousel-caption text-center h3"
+            style="color: white; text-shadow: 2px 2px 3px #f0ad4e"
+          >
+            <h5>History of music</h5>
+            <p>
+              40,000 years ago, music was created by humans, although another
+              possibility is that it was created by animals.
+            </p>
+            <a
+              href="https://journals.sagepub.com/doi/full/10.1177/2059204317751971"
+              class="btn btn-lg btn-primary"
+              style="color: none; text-shadow: none"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.hdqwalls.com/wallpapers/color-paint-8k-yj.jpg"
+            class="d-block w-100"
+          />
+          <div
+            class="carousel-caption text-end h3"
+            style="color: white; text-shadow: 2px 2px 3px #5cb85c"
+          >
+            <h5>Pop culture</h5>
+            <p>
+              Although not all music has influenced society, much of it has, a
+              few examples being Ed Sheeran, Selena Gomez and recently, The
+              Weeknd.
+            </p>
+            <a
+              href="https://www.udiscovermusic.com/artists-a-z/"
+              class="btn btn-lg btn-primary"
+              style="color: none; text-shadow: none"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container">
+      <!-- First heading -->
+        <div class="row justify-content-center" id="team">
+          <div class="col-md-3">
+            <img
+              src="https://i.ibb.co/jrLQ2br/cGc.jpg"
+              class="rounded-circle w-75 mx-auto d-block"
+            />
+            <h2 class="text-muted text-center">Pete</h2>
+            <p class="text-muted text-center">
+              A musician for the famous band, the Biggest Brains, Pete has many
+              years of experience in the art world.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="https://i.ibb.co/ZxzvDkt/cGc.jpg"
+              class="rounded-circle w-75 mx-auto d-block"
+            />
+            <h2 class="text-muted text-center">Mike</h2>
+            <p class="text-muted text-center">
+              Mike is a former record label CEO, the Galaxy Brain, which is
+              famous for it's superior quality.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="https://i.ibb.co/84x7W4Q/cGc.jpg"
+              class="rounded-circle w-75 mx-auto d-block"
+            />
+            <h2 class="text-muted text-center">Grace</h2>
+            <p class="text-muted text-center">
+              Grace is a expert in music theory, and is very knowledgeable about
+              making songs flow.
+            </p>
+          </div>
+          </div>
+          <hr class="featurette-divider" />
+          <div class="container" id="sponsors">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">
+                  A few sponsors such as <span class="text-muted"
+                    > Soundcloud,</span
+                  >
+                </h2>
+                <p class="lead">
+                  Soundcloud are just one of our sponsors that are very invested in our work.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/soundcloud-512.png" style="width:256px;float:right;"class="img-fluid col-md-4 col-xs-12" />
+              </div>
+            </div>
+            <hr class="featurette-divider" />
+            <div class="row featurette">
+              <div class="col-md-7">
+                <img src="https://i.ibb.co/8MC5rg0/1200px-Antu-spotify-svg.png" style="width:256px;"class="img-fluid" />
+              </div>
+              <div class="col-md-5">
+                <h2 class="featurette-heading">
+                  Our second sponsor, <span class="text-muted"
+                    > Spotify</span
+                  >
+                </h2>
+                <p class="lead">
+                  Which has supported our team and project for many years. 
+                </p>
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">
+                  Our last sponsor<span class="text-muted"
+                    > Apple.</span
+                  >
+                </h2>
+                <p class="lead">
+                  Apple has supported us from the very start, when we were just a tiny company.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" style="width:256px; float:right;" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 0000–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div>
+    <script
+      src="bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
