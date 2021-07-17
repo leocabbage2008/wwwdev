@@ -1,0 +1,357 @@
+<html lang="en">
+
+<head>
+    <style id="stndz-style"></style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landkit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="https://landkit.goodthemes.co//assets/favicon/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/6e01aadbd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+        <div class="container">
+            <div class="img-container">
+                <img src="https://landkit.goodthemes.co/assets/img/brand.svg" alt="" class="navbar-brand-img" />
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary" id="nav-link-1">Landings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary" id="nav-link-2">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary" id="nav-link-3">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary" id="nav-link-4">Documentation</a>
+                    </li>
+                </ul>
+                <button class="btn navbar-btn rounded-3 btn-primary btn-md btn-rise" id="btn-buy">
+                    Buy now
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- cover image -->
+    <div class="splash-img">
+        <div class="text-cont">
+            <h1>What Do You Need?</h1>
+            <p>
+                We're here to help you better use Landkit. First, let's figure out if
+                we have a solution in our documentation.
+            </p>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="bg-ghost">
+        <div class="container main">
+            <!-- search bar -->
+            <div class="input-group mb-3 shadow-box rounded-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text search-icon"><i class="bi bi-search"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for your issue..." aria-label="Username"
+                    id="search-input" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary srch-btn">Search</button>
+                </div>
+            </div>
+            <div class="row help-container">
+                <div class="col-auto">
+                    <h6 class="mb-0 text-grey" id="common">
+                        COMMON SEARCHES:
+                    </h6>
+
+                </div>
+                <div class="col">
+                    <p class="fs-sm mb-0 text-grey">
+                        Redownload my theme, Request an invoice, Update my .zip
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="card-container">
+                <div class="card rounded-3" id="card-blue">
+                    <div class="card-icon" id="icon-blue">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h5>Account</h5>
+                    <p>Issues related to loggin in, out, or about multiple devices.</p>
+                    <span class="pill">21 entries</span>
+                </div>
+                <div class="card rounded-3" id="card-green">
+                    <div class="card-icon" id="icon-green">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <h5>Integrations</h5>
+                    <p>Connecting with 3rd party apps to exchange data.</p>
+                    <span class="pill">9 entries</span>
+                </div>
+                <div class="card rounded-3" id="card-yellow">
+                    <div class="card-icon" id="icon-yellow">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h5>Billing</h5>
+                    <p>Issues with payments or invoicing.</p>
+                    <span class="pill">14 entries</span>
+                </div>
+                <div class="card rounded-3" id="card-black">
+                    <div class="card-icon" id="icon-black">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h5>Organizations</h5>
+                    <p>Setting up and managing collections of users.</p>
+                    <span class="pill">17 entries</span>
+                </div>
+                <div class="card rounded-3" id="card-light-blue">
+                    <div class="card-icon" id="icon-light-blue">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h5>Performance</h5>
+                    <p>Improving your system's speed and reliability.</p>
+                    <span class="pill">7 entries</span>
+                </div>
+                <div class="card rounded-3" id="card-red">
+                    <div class="card-icon" id="icon-red">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h5>Customizing</h5>
+                    <p>Building custom modules on top of our platform.</p>
+                    <span class="pill">14 entries</span>
+                </div>
+            </div>
+            <!-- form -->
+            <div class="container">
+                <div class="container help">
+                    <h4 class="text-center">Can't find the answer you need?</h4>
+                    <p class="text-center">
+                        Contact us and we'll get back to you as soon as possible with a
+                        solution to whatever issues you're having with Landkit.
+                    </p>
+                </div>
+                <div class="row" id="contacts">
+                    <div class="col-md-4 text-center">
+                        <h6 class="text-uppercase">Message us</h6>
+                        <div class="mb-5 mb-md-0">
+                            <a class="h5"> Start a chat! </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h6 class="text-uppercase">Call anytime</h6>
+                        <div class="mb-5 mb-md-0">
+                            <a class="h5"> (555) 123-4567 </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h6 class="text-uppercase">Email us</h6>
+                        <a class="h5"> support@goodthemes.co </a>
+                    </div>
+                </div>
+
+                <form class="form-inline" id="form">
+                    <div class="row">
+                        <div class="col-12 col-md-6" id="name">
+                            <div class="form-group col-md">
+                                <label>Full name</label>
+                                <input id="full-name" class="form-control input-group-lg form-input" type="text"
+                                    placeholder="Full name" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group col-md">
+                                <label>Email</label>
+                                <input id="email" class="form-control input-group-lg form-input" type="text"
+                                    placeholder="hello@domain.com" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="form-group textarea-container">
+                        <label>What can we help you with?</label>
+                        <textarea class="form-control" id="form-textarea" rows="6"
+                            placeholder="Tell us what we can help you with!"></textarea>
+                    </div>
+                </form>
+
+                <div id="submit">
+                    <button type="submit" class="btn btn-primary btn-md btn-rise submit rounded-3">
+                        Submit request
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container" id="footer-container">
+            <div class="col-12 col-md-4 col-lg-3" style="float:left;">
+                <img src="https://landkit.goodthemes.co/assets/img/brand.svg" class="footer-logo mb-2">
+                <p class="mb-2 gray">
+                    A better way to build.
+                </p>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item me-3">
+                        <img src="https://landkit.goodthemes.co/assets/img/icons/social/instagram.svg">
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <img src="https://landkit.goodthemes.co/assets/img/icons/social/facebook.svg">
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <img src="https://landkit.goodthemes.co/assets/img/icons/social/twitter.svg">
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <img src="https://landkit.goodthemes.co/assets/img/icons/social/pinterest.svg">
+                    </li>
+                </ul>
+            </div>
+            <div class="row" id="row">
+
+                <div class="col-6 col-md-4 col-lg-2" id="first-col">
+                    <p class="mb-2 gray sm-text">PRODUCTS</p>
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Page Builder
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                UI Kit
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Styleguide
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Changelog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <p class="mb-2 gray sm-text">SERVICES</p>
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Changelog
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Pagebuilder
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                UI kit
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <p class="mb-2 gray sm-text">CONNECT</p>
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Page Builder
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                UI Kit
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Styleguide
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Changelog
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Changelog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <p class="mb-2 gray sm-text">LEGAL</p>
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Changelog
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="light-gray list-link">
+                                Page Builder
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
