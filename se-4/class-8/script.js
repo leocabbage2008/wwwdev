@@ -817,7 +817,12 @@ const { key, anotherKey } = object;
 const q1 = (champion) => {
     return champion.data.Irelia.skins;
 };
-const q2 = (champion) => {};
+
+function q2(champion) {
+    let ret = [];
+    champion.data.Irelia.forEach((obj) => ret.push(obj.name));
+    return ret;
+}
 const q3 = (champion) => {};
 const q4 = (champion) => {};
 const q5 = (champion) => {};
