@@ -815,14 +815,68 @@ const { key, anotherKey } = object;
 
 
 const q1 = (champion) => {
-    return champion.data.Irelia.skins;
+    const skins = [{
+            "id": "39000",
+            "num": 0,
+            "name": "default",
+            "chromas": false
+        },
+        {
+            "id": "39001",
+            "num": 1,
+            "name": "Nightblade Irelia",
+            "chromas": false
+        },
+        {
+            "id": "39002",
+            "num": 2,
+            "name": "Aviator Irelia",
+            "chromas": false
+        }
+    ]
+    champion.data.Irelia.skins = skins;
+};
+const q2 = (skins) => {
+    let ret = [];
+    for (let i = 0; i < skins.length; i++) {
+        ret.push(skins[i].name);
+    }
+    return ret.slice(1, ret.length);
+};
+const q3 = (skins) => {
+    let ret = [];
+    skins.forEach((value) => {
+        ret.push({
+            "skinName": value.name,
+            "id": value.id
+        });
+    });
+    return ret.slice(1, ret.length);
 };
 
-function q2(champion) {
-    let ret = [];
-    champion.data.Irelia.forEach((obj) => ret.push(obj.name));
+const q4 = (champion) => {
+    let ret = {};
+    let names = q2(champion)
+    for (let i = 0; i < champion.length; i++) {
+        ret[champion[i].name] = champion[i].id;
+    }
+    delete ret.default;
     return ret;
-}
-const q3 = (champion) => {};
-const q4 = (champion) => {};
-const q5 = (champion) => {};
+};
+const q5 = (skins) => {
+    let ret = [];
+    for (let i = 0; i < skins.length; i++) {
+        if (skins[i].chromas) ret.push(skins[i].name);
+    }
+    return ret;
+};
+
+
+q1(champion)
+const skins = champion.data.Irelia.skins;
+console.log(skins)
+console.log(q2(skins));
+console.log(q3(skins));
+console.log(q4(skins));
+// This doesn't return anything, because first three chromas of Irelia are falsy
+console.log(q5(skins));
