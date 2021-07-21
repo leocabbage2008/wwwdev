@@ -837,26 +837,20 @@ const q1 = (champion) => {
     champion.data.Irelia.skins = skins;
 };
 const q2 = (skins) => {
-    let ret = [];
-    for (let i = 0; i < skins.length; i++) {
-        ret.push(skins[i].name);
-    }
-    return ret.slice(1, ret.length);
+    names = skins.map((v) => v.name)
+    // slice so doesn't return default
+    return names.slice(1, names.length);
 };
 const q3 = (skins) => {
-    let ret = [];
-    skins.forEach((value) => {
-        ret.push({
-            "skinName": value.name,
-            "id": value.id
-        });
-    });
+    let ret = skins.map((v) => ({
+        ["skinName"]: v.name,
+        ["id"]: v.id
+    }));
     return ret.slice(1, ret.length);
 };
 
 const q4 = (champion) => {
     let ret = {};
-    let names = q2(champion)
     for (let i = 0; i < champion.length; i++) {
         ret[champion[i].name] = champion[i].id;
     }
@@ -865,9 +859,7 @@ const q4 = (champion) => {
 };
 const q5 = (skins) => {
     let ret = [];
-    for (let i = 0; i < skins.length; i++) {
-        if (skins[i].chromas) ret.push(skins[i].name);
-    }
+    console.log(skins.filter(v => v.chromas))
     return ret;
 };
 
